@@ -8,7 +8,8 @@
     color: #666;
 }
 
-.search-field {
+.search-field,
+.search-field-two {
     background-color: #854242;
 }
 
@@ -67,6 +68,7 @@ footer {
     .sub-title {
         font-size: 1.2em;
         text-align: center;
+        margin-bottom: 10px;
     }
     .search-field-two {
         display: none;
@@ -80,11 +82,9 @@ footer {
     .text-field {
         width: 60%;
     }
-
     .search-button {
         width: 35%;
         margin-left: 10px;
-
     }
     .nav-bar {
         display: none;
@@ -101,6 +101,11 @@ footer {
     main {
         width: 90%;
         margin: 0 auto;
+    }
+    .container-left {
+    }
+
+    .container-right {
     }
     .article-title {
         margin-bottom: 10px;
@@ -138,7 +143,7 @@ footer {
  
 @media only screen and (min-width: 500px) and (max-width: 800px) {
     body {
-        background-color: lightblue;
+        background-color: rgb(255, 239, 226);
         height: 200vh;
     }
     .dropdown-menu {
@@ -148,11 +153,13 @@ footer {
         font-size: 1.8em;
         text-align: center;
         margin-top: 30px;
+        margin-bottom: 10px;
     }
     .sub-title {
         margin: 0 auto;
         font-size: 1.3em;
         text-align: center;
+        margin-bottom: 10px;
     }
     .nav-bar {
         display: flex;
@@ -167,24 +174,61 @@ footer {
     }
     .search-field {
         display: none;
-        /* margin: 0 auto;
-        width: 90%;
-        padding: 6px; */
     }
     .search-field-two {
-        
+        width: 90%;
+        margin: 0 auto;
+        padding: 6px;
+        margin-top: 5px;
     }
     .text-field {
-        /* width: 60%; */
+        width: 60%;
     }
     .search-button {
-        /* width: 35%;
-        margin-left: 10px; */
+        width: 35%;
+        margin-left: 10px;
 
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container-left {
+        width: 40%;
+    }
+    .container-right {
+        width: 50%;
+    }
+    .section-one,
+    .section-two {
+    background-color: #854242;
+    padding: 1.8%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 60%;
+    }
+    .section-one p,
+    .section-two p {
+        text-align: center;
+        color: white;
+    }
+    .container-left {
     }
     p {
         font-size: 0.9em;
-    } 
+    }
+    footer {
+        padding: 3%;
+        margin: 5%;
+        border-radius: 8px;
+        }
+        
+        .footer-text {
+        font-size: 0.8em;
+        color: #fff;
+        }
 }
 
 /* Desktop */
