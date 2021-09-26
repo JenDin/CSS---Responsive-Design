@@ -8,11 +8,6 @@
     color: #666;
 }
 
-.search-field,
-.search-field-two {
-    background-color: #854242;
-}
-
 .miun-image {
   display: block;
   margin-left: auto;
@@ -33,7 +28,6 @@ header {
 
 .container-left,
 .container-right {
-    /* word-wrap: break-word; */
     margin: 0 auto;
 }
 
@@ -61,12 +55,12 @@ footer {
 
 @media only screen and (max-width: 500px) {
     .main-title {
-        font-size: 1.6em;
+        font-size: 1.3em;
         text-align: center;
         margin-top: 30px;
     }
     .sub-title {
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -74,6 +68,7 @@ footer {
         display: none;
     }
     .search-field {
+        background-color: #854242;
         position: absolute;
         top: 0;
         width: 100%;
@@ -94,6 +89,9 @@ footer {
         margin: 0 auto;
         margin-bottom: 5%;
         width: 90%;
+    }
+    hr {
+        display: none;
     }
     .miun-image {
         width: 90%;
@@ -142,14 +140,14 @@ footer {
         display: none;
     }
     .main-title {
-        font-size: 1.4em;
+        font-size: 1.5em;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 10px;
     }
     .sub-title {
         margin: 0 auto;
-        font-size: 1.2em;
+        font-size: 1.3em;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -167,6 +165,7 @@ footer {
         display: none;
     }
     .search-field-two {
+        background-color: #854242;
         width: 90%;
         margin: 0 auto;
         padding: 6px;
@@ -178,6 +177,9 @@ footer {
     .search-button {
         width: 35%;
         margin-left: 10px;
+    }
+    hr {
+        display: none;
     }
     main {
         width: 100%;
@@ -218,10 +220,10 @@ footer {
     footer {
         padding: 2%;
         border-radius: 8px;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 20px;
-        margin-left: 35px;
+        overflow: hidden;
         }
     .footer-text {
     font-size: 0.8em;
@@ -232,8 +234,88 @@ footer {
 /* Desktop */
 
 @media only screen and (min-width: 800px) {
-    body {
-        background-color: gainsboro;
+    .dropdown-menu {
+        display: none;
     }
-
+    .search-field-two {
+        display: none;
+    }
+    .main-title {
+        text-align: center;
+        margin: 15px 0px;
+    }
+    .sub-title {
+        text-align: center;
+    }
+    .search-field {
+        display: flex;
+        justify-content: flex-end;
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .text-field {
+        margin-right: 10px;
+        height: 23px;
+    }
+    .search-button {
+        padding: 0.2em;
+        width: 40px;
+    }
+    .nav-bar {
+        list-style: none;
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .nav-bar li {
+        padding-right: 20px;
+    }
+    hr {
+        background-color: #854242;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        height: 5px;
+        
+    }
+    .article-title {
+        margin: 10px 0px;
+    }
+    main {
+        display: flex;
+        width: 90%;
+    }
+    .container-left,
+    .container-right {
+        width: 45%;
+        margin: 0px 5.5%;
+    }
+    .section-one,
+    .section-two {
+    background-color: #854242;
+    padding: 1.8%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    }
+    .section-one p,
+    .section-two p {
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        padding: 5px;
+    }
+    footer {
+        padding: 15px 10px;
+        border-radius: 8px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+        }
+    .footer-text {
+    font-size: 1em;
+    color: #fff;
+    }
 }
